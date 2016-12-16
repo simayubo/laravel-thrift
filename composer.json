@@ -3,7 +3,7 @@
     "description": "laravel thrift",
     "type": "laravel-thrift",
     "license": "BSD 3-Clause",
-    "minimum-stability": "1.0",
+    "minimum-stability": "dev",
     "authors": [
     	{
     		"nash": "nash.tang",
