@@ -1,0 +1,20 @@
+{
+    "name": "kilimall/laravel-thrift",
+    "description": "laravel thrift",
+    "type": "laravel-thrift",
+    "license": "BSD 3-Clause",
+    "minimum-stability": "dev",
+    "authors": [
+    	{
+    		"nash": "nash.tang",
+    		"email": "nash.tang@kilimall.com"
+    	}
+    ],
+    "require": {},
+    "autoload": {
+    	"psr-4": {
+			"Thrift": "lib/",
+    		"Rpc": "rpc/"
+    	}
+    }
+}
