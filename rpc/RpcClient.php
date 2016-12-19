@@ -43,13 +43,19 @@ class RpcClient
 	public function __call($name, $arguments)
 	{
 
-		$this->transport->open();
+		try {
 
-		$respose = call_user_func_array(array($this->client, $name), $arguments);
+			$this->transport->open();
 
-		$this->transport->close();
+			$respose = call_user_func_array(array($this->client, $name), $arguments);
 
-		return $respose;
+			$this->transport->close();
+
+			return $respose;
+			
+		} catch (TException $tx) {
+		    print 'TException: '.$tx->getMessage()."\n";
+		}
 	}	
 }
 
